@@ -1,0 +1,122 @@
+body {
+    padding-top: 36px;
+}
+
+section {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    min-height: 100vh;
+}
+
+section#contato {
+    min-height: 80vh;
+}
+
+footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: url(../imagem/madeira2.jpg);
+}
+
+.linhaCinza {
+    background: gray;
+}
+
+.linhaVermelha {
+    background: red;
+}
+
+.bg-color-padding p {
+    padding: 15px;   
+}
+
+.divslider {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: url(../imagem/01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div_colorida {
+    background: url(../imagem/madeira2.jpg);
+    background-size: cover;
+}
+
+.servicos_item {
+    text-align: center;
+}
+
+.servicos_item h4 {
+    margin-top: 20px;
+    font-size: 20px; 
+}
+
+.servicos_btn_todososservicos{
+    margin-top: 25px;   
+}
+
+.portifolio_item {
+    background: white;
+}
+
+.portifolio_row {
+    margin-bottom: 20px;
+}
+
+.portifolio_item h4 {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#imgCinza{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+
+#imgColorida{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="" 0\'="" 1="" 0="" 0.3333="" /></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+     
+}
+ 
+#imgColorida:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza:hover{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="" 0\'="" 1="" 0="" 0.3333="" /></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.contato textarea {
+    height: 170px;
+}
+
+.contato .aviso {
+    padding: 15px;
+}
