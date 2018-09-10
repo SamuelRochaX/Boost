@@ -120,3 +120,83 @@ footer {
 .contato .aviso {
     padding: 15px;
 }
+
+.form-login{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: #eee;
+}
+
+.form-login input{
+    margin-bottom: 8px;
+}
+
+.chata {
+    margin-bottom: 0px;
+}
+
+.estilo {
+ color: white!important;   
+}
+
+.estilov {
+    background-color: #4c0202!important;
+    border-color: #690e0e!important;
+}
+
+.dropdown-menu>li>a:hover {
+    background-color: #860000;
+}
+
+.navbar-default .navbar-brand:hover {
+    background-color: #860000;
+}
+
+.panel {
+    margin-bottom: 0px;
+}
+
+.conteudo_painel {
+    background: white;
+    border-radius: 8px;
+    border:1px solid #eee;
+    box-shadow: 5px 5px 5px #c10000;
+}
+
+.conteudo_painel_int {
+    padding: 12px;
+}
+
+.alert-success {
+    color: #05ff09;
+    background-color: #000000;
+    border-color: #ff0000;
+}
+
+.alert-warning {
+    color: #ffa100;
+    background-color: #000000;
+    border-color: #ff0000;
+}
+
+.nav-pills>li>a {
+        margin-bottom: 5px;
+        margin-right: 2px;
+    }
+
+@media all and (max-width: 484px){
+    .nav-pills>li>a {
+        border-radius: 4px;
+        margin-bottom: 6px;
+        margin-right: 80px;
+    }
+}
+
+@media all and (max-width: 767px){
+    .xxx {
+        margin-bottom: 8px;
+    }
+}

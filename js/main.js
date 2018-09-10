@@ -1,6 +1,13 @@
 $(function () {
     //equivalente ao load de nossa página
     
+    $('input[maxlength]').maxlength({
+            alwaysShow: true,
+            threshold: 10,
+            warningClass: "label label-success",
+            limitReachedClass: "label label-danger"
+        });
+    
     $("#modal01").modal("show");
     
     setTimeout(function(){
@@ -33,11 +40,26 @@ $(function () {
     
 });
 
-var $doc = $('html, body');
-$('a').click(function() {
-   $doc.animate({
-       scrollTop: $( $.attr(this, 'href') ).offset().top
-   }, 500);
-   return false;
+$(function() { 
+$('#menu-navegacao').find('a').not(".carousel-control").click(function() { 
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) { 
+var target = $(this.hash); 
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']'); 
+if (target.length) { 
+$('html,body').animate({ 
+scrollTop: target.offset().top 
+}, 1000); 
+return false; 
+} 
+} 
+}); 
 });
 
+$( document ).ready(function() {
+    $(".panel-collapse").removeClass("in");
+	$(".regi").on("click",function(){
+        $(".regi").each(function(){
+           $(".panel-collapse").removeClass("in");
+        });
+    });
+});
